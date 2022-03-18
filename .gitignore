@@ -284,11 +284,20 @@ fabric.properties
 pyvenv.cfg
 pip-selfcheck.json
 
+.env.dev
+.env.prod
+.env.prod.db
+/.env.dev
+/.env.prod
+/.env.prod.db
 
 !/.env.dev
 !/.env.prod
 !/.env.prod.db
 
 !/app/mediafiles/
-
 !/app/staticfiles/
+/app/mediafiles/
+/app/staticfiles/
+app/mediafiles/
+app/staticfiles/
