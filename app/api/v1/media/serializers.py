@@ -5,15 +5,15 @@ from users.models import User
 
 
 class VideoSerializer(serializers.HyperlinkedModelSerializer):
-    owner = serializers.ReadOnlyField(source='owner_id')
+    owner_id = serializers.ReadOnlyField(source='owner_id.id')
 
     class Meta:
         model = Video
         fields = [
+            'owner_id',
             'id',
             'title',
             'original_file',
             'duration',
-            'owner_id',
             'created_date'
         ]
