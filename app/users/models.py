@@ -11,7 +11,6 @@ class User(AbstractUser):
     username = None
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     email = models.EmailField(_('email address'), unique=True)
-    dob = models.DateField(_('date of birth'), null=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
