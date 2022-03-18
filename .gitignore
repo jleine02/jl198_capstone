@@ -13,9 +13,11 @@ db.sqlite3-journal
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
 app/staticfiles/
+staticfiles
 
 # ignore local video upload tests
 app/mediafiles
+mediafiles
 
 ### Django.Python Stack ###
 # Byte-compiled / optimized / DLL files
