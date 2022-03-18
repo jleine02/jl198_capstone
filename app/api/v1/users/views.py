@@ -3,7 +3,7 @@ from rest_framework.generics import \
     (ListAPIView, RetrieveAPIView, GenericAPIView)
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework.reverse import reverse
+from rest_framework.reverse import reverse_lazy
 from rest_framework import permissions, renderers
 
 from .permissions import IsOwnerOrReadOnly
@@ -13,7 +13,7 @@ from .serializers import UserSerializer
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': reverse('user-list', request=request, format=format)
+        'users': reverse_lazy('user-list', request=request, format=format)
     })
 
 
