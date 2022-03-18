@@ -289,3 +289,6 @@ pip-selfcheck.json
 !/.env.prod
 !/.env.prod.db
 
+!/app/mediafiles/
+
+!/app/staticfiles/
