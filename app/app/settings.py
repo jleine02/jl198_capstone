@@ -33,7 +33,6 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
-    'media.apps.MediaConfig',
     'users.apps.UsersConfig',
 ]
 

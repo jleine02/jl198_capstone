@@ -17,7 +17,7 @@ class UserAdmin(BaseUserAdmin):
     )
 
     list_display = ('email', 'full_name', 'is_active', 'is_staff')
-    search_fields = ('first_name', 'last_name', 'email')
+    search_fields = ('first_name', 'last_name', 'email', 'dob')
     ordering = ('email',)
 
     add_fieldsets = (
