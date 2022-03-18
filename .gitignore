@@ -1,6 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/django,pycharm,venv
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,pycharm,venv
 
+.env*
 .env.dev
 .env.prod
 .env.prod.db
